@@ -5,6 +5,8 @@ from __future__ import unicode_literals
 AUTHOR = 'Sangwoong Yoon'
 SITENAME = "swyoon's blog"
 SITEURL = 'https://swyoon.github.io'
+SITETITLE = AUTHOR
+SITESUBTITLE = 'Machine Learning Researcher'
 
 PATH = 'content'
 
@@ -19,21 +21,19 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-MAIN_MENU = True
+MAIN_MENU = False
+USE_FOLDER_AS_CATEGORY = True
+DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = True
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         )
+LINKS = (('Archives', '/archives.html'),
+         ('Categories', '/categories.html'),
+        ('Tags', '/tags.html'))
 
 # Social widget
-SOCIAL = (('Facebook', 'https://www.facebook.com/sangwoong.yoon.18'),
-          )
-
-MENUITEMS = (('Archives', '/archives.html'),
-             ('Categories', '/categories.html'),
-             ('Tags', '/tags.html'),)
+SOCIAL = (('github', 'https://www.github.com/swyoon'),
+          ('facebook', 'https://www.facebook.com/sangwoong.yoon.18'))
 
 DEFAULT_PAGINATION = 10
 
