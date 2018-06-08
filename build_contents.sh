@@ -1,5 +1,5 @@
 #! /bin/zsh
 
-pyenv exec pelican -s content -s publishconf.py
-pyenv exec ghp-import output -b master
+pelican -s content -s publishconf.py --ignore-cache
+ghp-import output -b master
 

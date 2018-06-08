@@ -37,7 +37,7 @@ SOCIAL = (('github', 'https://www.github.com/swyoon'),
 
 DEFAULT_PAGINATION = 10
 
-THEME = "/home/sangwoong/pelican-themes/Flex"
+THEME = "/home/swyoon/pelican-themes/Flex"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -45,5 +45,5 @@ THEME = "/home/sangwoong/pelican-themes/Flex"
 # added by swyoon
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATH = ['./plugins']
-PLUGINS = ['ipynb.markup']
+PLUGIN_PATHS = ['/home/swyoon/cloned/pelican-plugins']
+PLUGINS = ['pelican-ipynb.markup']
