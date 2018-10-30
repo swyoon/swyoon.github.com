@@ -10,7 +10,6 @@
   <link rel="stylesheet" type="text/css" href="https://swyoon.github.io/theme/font-awesome/css/font-awesome.min.css">
 
 
-    <link href="https://swyoon.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="swyoon's blog Atom">
 
 
 
@@ -21,23 +20,23 @@
   <meta name="robots" content="" />
 
 
-<meta name="author" content="Vik Paruchuri" />
-<meta name="description" content="First post!¶This will be the first post in our new Pelican blog! You can add any code or markdown cells to this Jupyter notebook, and they will be rendered on your blog." />
-<meta name="keywords" content="python firsts">
+<meta name="author" content="Sangwoong Yoon" />
+<meta name="description" content="Kernel Stein Methods¶ Stein's method Kernelized Stein Discrepancy Stein Gradient Estimator 1. Stein's Method¶ Charles Stein 1972. Originally developed to prove central limit theorem. I.e., to bound the difference between the sum of random variables and the The method is generalized to obtain bounds on the distance between two probability distributions wrt probability metric. 1.1 Preliminary - Statistical Distance¶" />
+<meta name="keywords" content="kernel kernel-stein">
 <meta property="og:site_name" content="swyoon's blog"/>
-<meta property="og:title" content="First Post"/>
-<meta property="og:description" content="First post!¶This will be the first post in our new Pelican blog! You can add any code or markdown cells to this Jupyter notebook, and they will be rendered on your blog."/>
+<meta property="og:title" content="Kernel and Stein's Identity"/>
+<meta property="og:description" content="Kernel Stein Methods¶ Stein's method Kernelized Stein Discrepancy Stein Gradient Estimator 1. Stein's Method¶ Charles Stein 1972. Originally developed to prove central limit theorem. I.e., to bound the difference between the sum of random variables and the The method is generalized to obtain bounds on the distance between two probability distributions wrt probability metric. 1.1 Preliminary - Statistical Distance¶"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://swyoon.github.io/first-post.html"/>
+<meta property="og:url" content="https://swyoon.github.io/ksd.html"/>
 <meta property="og:type" content="article"/>
-<meta property="article:published_time" content="2016-06-08 20:00:00+09:00"/>
+<meta property="article:published_time" content="2018-10-30 14:00:00+09:00"/>
 <meta property="article:modified_time" content=""/>
-<meta property="article:author" content="https://swyoon.github.io/author/vik-paruchuri.html">
+<meta property="article:author" content="https://swyoon.github.io/author/sangwoong-yoon.html">
 <meta property="article:section" content="kernel_methods"/>
-<meta property="article:tag" content="python firsts"/>
+<meta property="article:tag" content="kernel kernel-stein"/>
 <meta property="og:image" content="">
 
-  <title>swyoon's blog &ndash; First Post</title>
+  <title>swyoon's blog &ndash; Kernel and Stein's Identity</title>
 
 </head>
 <body>
@@ -72,9 +71,9 @@
 
 <article class="single">
   <header>
-    <h1 id="first-post">First Post</h1>
+    <h1 id="ksd">Kernel and Stein's Identity</h1>
     <p>
-          Posted on Wed 08 June 2016 in <a href="https://swyoon.github.io/category/kernel_methods.html">kernel_methods</a>
+          Posted on 화 30 10월 2018 in <a href="https://swyoon.github.io/category/kernel_methods.html">kernel_methods</a>
 
 
     </p>
@@ -1058,158 +1057,156 @@ h6:hover .anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="First-post!">First post!<a class="anchor-link" href="#First-post!">&#182;</a></h1><p>This will be the first post in our new Pelican blog! You can add any code or markdown cells to this Jupyter notebook, and they will be rendered on your blog.</p>
+<h1 id="Kernel-Stein-Methods">Kernel Stein Methods<a class="anchor-link" href="#Kernel-Stein-Methods">&#182;</a></h1><ol>
+<li>Stein's method</li>
+<li>Kernelized Stein Discrepancy</li>
+<li>Stein Gradient Estimator</li>
+</ol>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
-
-<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>4</pre>
-</div>
-
-</div>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-Stein's-Method">1. Stein's Method<a class="anchor-link" href="#1.-Stein's-Method">&#182;</a></h2><ul>
+<li>Charles Stein 1972.</li>
+<li>Originally developed to prove central limit theorem. <ul>
+<li>I.e., to bound the difference between the sum of random variables and the </li>
+</ul>
+</li>
+<li>The method is generalized to obtain bounds on the distance between two probability distributions wrt probability metric.</li>
+</ul>
 
 </div>
 </div>
-
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
 <div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.1-Preliminary---Statistical-Distance">1.1 Preliminary - Statistical Distance<a class="anchor-link" href="#1.1-Preliminary---Statistical-Distance">&#182;</a></h2><p><strong>Statistical Distance</strong> is the measure of the difference between two probability distributions. The most well known example is Kullback-Leibler divergence, and I assume many of readers are already familiar with it. Each statistical distance quantify the difference from different perspectives, and also possesses different computational properties. Studying the differences and properties of statistical distances is a fundamental topic in machine learning research. Note that many of statistical distances are not actually a valid <em>distance</em>.</p>
+<p>Here, we consider a specific form of statistical difference, which is defined with a supremum and a <strong>test function</strong> $h$.</p>
+<p>$$
+d(P,Q) = \sup_{h \in \mathcal{H}} \left|\int h dP - \int h dQ\right| = \sup_{h \in \mathcal{H}} \left| E [h(W)] - E [h(Y)] \right|,
+$$
+where $P$ and $Q$ are probability measures, $W$, and $Y$ are random variables with distributions $P$ and $Q$.</p>
+<p>A simple example of such statistical distance is <strong>Kolmogorov-Smirnoff Statistic</strong>, which is widely used for hypothesis test called Kolmogorov-Smirnoff (KS) test. The statistic measures the largest absolute deviation between two cumulative distributions, one of which is typically an empirical CDF and the other is the true CDF.</p>
+<p><img src="ks.png" alt="ks_img">(Image source: Wikipedia)</p>
+<p>$$
+F_n(x) = \frac{1}{N}\sum_{i=1}^{N} I_{[-\infty, x]}(X_i)
+$$
+$$
+D_n = \sup_{x} |F_n(x) - F(x)|
+$$</p>
 
-<span class="o">%</span><span class="k">matplotlib</span> inline
-
-<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
-</pre></div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.2.-Stein's-Equation">1.2. Stein's Equation<a class="anchor-link" href="#1.2.-Stein's-Equation">&#182;</a></h2><h3 id="Convergence-in-distribution">Convergence in distribution<a class="anchor-link" href="#Convergence-in-distribution">&#182;</a></h3><p>A sequence of real-valued random variables $X_n$ converges to $X$ in distribution if
+$$
+\lim_{n \to \infty}F_n(x)=F(x) \text{, and equivalently,}  \lim_{n \to \infty} P(X_n \leq x) = P(X \leq x)
+$$
+for all x.</p>
+<p>A similar, but a broader way to represent the convergence is that for all bounded continuous functions $h:R \to R$,</p>
+<p>$$
+\lim_{n \to \infty} E [g(X_n)] = E[g(X)].
+$$
+In fact, it is not necessary to consider all possible $g$, but only a small class of $g$.</p>
+<p><strong>Example : </strong> $g(x) \in \{ I_{[-\infty, t]}(x) | t \in R \}$</p>
+<p><strong>Another Example : </strong> $g(x) \in \{ e^{itx} | t \in R, i=\sqrt{-1} \}$</p>
+<p>However, if LHS and RHS are not equal, we can conclude that $X_n$ and $X$ do not have the same distribution. Stein was interested in bounding the deviation between the two terms.</p>
+<h3 id="Stein's-Operator">Stein's Operator<a class="anchor-link" href="#Stein's-Operator">&#182;</a></h3><p>Stein's initial observation is that when a random variable $Z$ which follows the standard normal distribution $\mathcal{N}(0,1)$, the following equation holds
+$$
+\mathbb{E}_{Z}[f'(Z)-Zf(Z)]=0
+$$
+for all absolutely sontinuous $f$ with bounded derivatives. The proof is simply given by an integration by parts.
+$$
+\begin{align}
+\mathbb{E}_{Z}[f'(Z)]= \int_{-\infty}^{\infty} p(z) f'(z) dz &amp;= \left[p(z)f(z)\right]^{\infty}_{\infty} + \int_{-\infty}^{\infty} z p(z) f(z) dz \\
+                                      &amp;= \int_{-\infty}^{\infty} z p(z) f(z) dz = \mathbb{E}[Zf(Z)]
+\end{align}
+$$</p>
+<p>We can say the operations in LHS "characterizes" the standard normal distribution, because we can check if $Z$ follows the standard normal distribution by computing the LHS. People somtimes abbreviate the LHS by introducing <strong>Stein's operator</strong> $A$ that transforms the function $f$.
+$$
+(Af)(x)=f'(x)-xf(x)
+$$
+and therefore, the original equation becomes $\mathbb{E}_{Z}[(Af)(Z)]=0$.</p>
+<h3 id="Stein-Equation">Stein Equation<a class="anchor-link" href="#Stein-Equation">&#182;</a></h3><p>If a random variable $X$ is not generated from the standard normal distribution, but from an approximation of it, the RHS would not be zero. To quantify the deviation, we consider the following differential quation which relates the stein operator to the statistical distance. Given any bounded measureable function $h$, we can find (a set of) $f_{h}$ satisfying the following equation.</p>
+<p>$$
+f_{h}'(x)  - xf_h(x) = h(x) - E[h(Z)]
+$$
+When we take expectation of both sides,
+$$
+E[f_h'(X)  - xf_h(X)] = E[h(X)] - E[h(Z)]
+$$
+The RHS is a form of statistical distance, and the LHS is the form in the Stein operator. Remember that when $h$ is given, and $f_h$ follows.</p>
+<p>Since $Z$ is the standard normal, we can write the explicit form of $f$.
+$$
+f_h(x) = e^{x^2/2} \int_{-\infty}^{x} [h(t)-\mathbb{E}h(Z)]e^{-t^2/2} dt
+$$
+However, we are not very much interested in the standard normal case.</p>
 
 </div>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[4]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(array([ 2.,  1.,  1.,  0.,  2.,  0.,  1.,  0.,  0.,  2.]),
- array([  1. ,   1.9,   2.8,   3.7,   4.6,   5.5,   6.4,   7.3,   8.2,
-          9.1,  10. ]),
- &lt;a list of 10 Patch objects&gt;)</pre>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-">
-</div>
-
-</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.3-Stein-Operator-for-the-General-Case">1.3 Stein Operator for the General Case<a class="anchor-link" href="#1.3-Stein-Operator-for-the-General-Case">&#182;</a></h2><p>Carefully observing the Stein's operator, we can see that $-Z$ is actually $p'(Z)/p(Z)$. Then, we can write the Stein operator for an arbitrary distribution with the density $p(Z)$.
+$$
+\mathbb{E}_{Z}\left[f'(Z)- \frac{p'(Z)}{p(Z)}f(Z)\right]=\mathbb{E}_{Z}\left[f'(Z)+ (\log p(Z))'f(Z)\right] = 0
+$$</p>
+<p>The proof is similar.</p>
+<p>$$
+\begin{align}
+\mathbb{E}_{Z}[f'(Z)]= \int_{-\infty}^{\infty} p(z) f'(z) dz &amp;= \left[p(z)f(z)\right]^{\infty}_{\infty} - \int_{-\infty}^{\infty}  p'(z) f(z) dz \\
+                                      &amp;= -\int_{-\infty}^{\infty} \frac{p'(z)}{p(z)}p(z) f(z) dz = -\mathbb{E}[(\log p(Z) )'f(Z)]
+\end{align}
+$$</p>
+<p>Stein operator $A_p f$ is defined as $(A_p f)(x)= f'(x) + (\log p(x))' f(x)$</p>
+<p>$\mathbb{E}[(Af_h)(x)] = \mathbb{E}[h(x)] - \mathbb{E}[h(Z)]$</p>
+<h2 id="1.4-Stein-Discrepancy">1.4 Stein Discrepancy<a class="anchor-link" href="#1.4-Stein-Discrepancy">&#182;</a></h2><p>With the supremum, we have Stein discrepancy, which is equivalent to a statistical distance depends on the choice of $h$.</p>
+<p>$\sup_{f_h} \mathbb{E}_q[(A_p f_h)(X)] = \sup_{h} \mathbb{E}_q[h(X)] - \mathbb{E}_p[h(Z)]$</p>
+<p>Defining the statistical distance defines a class of $h$. The set of $h$ defines the class of $f_h$.
+Note that $A_p$ is dependent on $p$. In other words, we need to know $p$ in advance.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2.-Kernelized-Stein-Discrepancy">2. Kernelized Stein Discrepancy<a class="anchor-link" href="#2.-Kernelized-Stein-Discrepancy">&#182;</a></h1><h2 id="2.1-Multivariate-Stein's-Operator">2.1 Multivariate Stein's Operator<a class="anchor-link" href="#2.1-Multivariate-Stein's-Operator">&#182;</a></h2><p>So far we have written Stein's method in univariate setting. Expanding it involves the a vector-valued test function $\mathbf{f}(\mathbf{x})$.
+$$
+A_{p}\mathbf{f}(\mathbf{x}) =  \nabla_{\mathbf{x}}  \log p(\mathbf{x}) \mathbf{f}(\mathbf{x})^\top + \nabla_{\mathbf{x}}\mathbf{f}(\mathbf{x})
+$$
+Then $A_{p}f$ is now a matrix-valued function.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.2.-Kernelized-Stein-Discrepancy">2.2. Kernelized Stein Discrepancy<a class="anchor-link" href="#2.2.-Kernelized-Stein-Discrepancy">&#182;</a></h2><p><strong>Lemma from (Ley &amp; Swan, 2013)</strong> $\mathbb{E}_p [A_q \mathbf{f}(\mathbf{x})] = \mathbb{E}_p[(\nabla\log q(\mathbf{x}) - \nabla\log p(\mathbf{x})) \mathbf{f(\mathbf{x})}^\top]$</p>
+<p>Stein discrepancy is the difference between two score functions weighted by $\mathbf{x}$.
+To obtain a sclaer, the trace is taken. (the dimension of $f$ needs to be the same as $\mathbf{x}$)</p>
+<p>$\mathbb{E}_p [tr( A_q \mathbf{f}(\mathbf{x}))] = \mathbb{E}_p[(\nabla\log q(\mathbf{x}) - \nabla\log p(\mathbf{x}))^\top \mathbf{f(\mathbf{x})}]$</p>
+<p>We confine the set of $f$ to be a unit ball in an RKHS defined by a positive definite kernel function $k(\cdot, \cdot)$.</p>
+<p>KSD is obtained by squaring it.</p>
+<p>$S(p, q) = \mathbb{E}_{\mathbf{x}, \mathbf{x}' \sim p}[(\mathbf{s}_q (\mathbf{x}) - \mathbf{s}_p (\mathbf{x}))^\top f(\mathbf{x}) f(\mathbf{x}')^\top (\mathbf{s}_q (\mathbf{x}') - \mathbf{s}_p (\mathbf{x}'))]$</p>
+
+</div>
+</div>
 </div>
  
 
@@ -1246,7 +1243,7 @@ l6SGjLskNWTcJakh4y5JDf0vZB9FlJ1A1boAAAAASUVORK5CYII=
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="https://swyoon.github.io/tag/python-firsts.html">python firsts</a>
+      <a href="https://swyoon.github.io/tag/kernel-kernel-stein.html">kernel kernel-stein</a>
     </p>
   </div>
 
