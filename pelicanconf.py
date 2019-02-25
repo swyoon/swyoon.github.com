@@ -29,9 +29,9 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = True
 
 # Blogroll
-LINKS = (('Archives', '/archives.html'),
-         ('Categories', '/categories.html'),
-        ('Tags', '/tags.html'))
+LINKS = (('Archives', '/archives.html'),)
+         # ('Categories', '/categories.html'),
+        # ('Tags', '/tags.html'))
 
 # Social widget
 SOCIAL = (('github', 'https://www.github.com/swyoon'),
