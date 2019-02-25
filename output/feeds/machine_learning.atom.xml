@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>swyoon's blog - machine_learning</title><link href="https://swyoon.github.io/" rel="alternate"></link><link href="https://swyoon.github.io/feeds/machine_learning.atom.xml" rel="self"></link><id>https://swyoon.github.io/</id><updated>2019-02-25T00:00:00+09:00</updated><entry><title>Gentle Introduction to Kernel Mean Embedding and Maximum Mean Discrepancy</title><link href="https://swyoon.github.io/kme-and-mmd.html" rel="alternate"></link><published>2019-02-25T00:00:00+09:00</published><updated>2019-02-25T00:00:00+09:00</updated><author><name>Sangwoong Yoon</name></author><id>tag:swyoon.github.io,2019-02-25:/kme-and-mmd.html</id><summary type="html">&lt;p&gt;contents&lt;/p&gt;</summary><content type="html">&lt;p&gt;contents&lt;/p&gt;</content></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>swyoon's blog - machine_learning</title><link href="https://swyoon.github.io/" rel="alternate"></link><link href="https://swyoon.github.io/feeds/machine_learning.atom.xml" rel="self"></link><id>https://swyoon.github.io/</id><updated>2019-02-25T00:00:00+09:00</updated><entry><title>Kernel Mean Embedding and Maximum Mean Discrepancy</title><link href="https://swyoon.github.io/kme-and-mmd.html" rel="alternate"></link><published>2019-02-25T00:00:00+09:00</published><updated>2019-02-25T00:00:00+09:00</updated><author><name>Sangwoong Yoon</name></author><id>tag:swyoon.github.io,2019-02-25:/kme-and-mmd.html</id><summary type="html">&lt;p&gt;&lt;intro&gt;
+Kernel mean embedding is &lt;/p&gt;
+&lt;h1&gt;Background&lt;/h1&gt;
+&lt;h1&gt;Embedding of Distributions in RKHS&lt;/h1&gt;
+&lt;h1&gt;Comparing Distributions in RKHS&lt;/h1&gt;</summary><content type="html">&lt;p&gt;&lt;intro&gt;
+Kernel mean embedding is &lt;/p&gt;
+&lt;h1&gt;Background&lt;/h1&gt;
+&lt;h1&gt;Embedding of Distributions in RKHS&lt;/h1&gt;
+&lt;h1&gt;Comparing Distributions in RKHS&lt;/h1&gt;</content></entry></feed>
