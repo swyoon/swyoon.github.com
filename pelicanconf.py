@@ -5,8 +5,10 @@ from __future__ import unicode_literals
 AUTHOR = 'Sangwoong Yoon'
 SITENAME = "swyoon's blog"
 SITEURL = 'https://swyoon.github.io'
+# SITEURL = 'http://swyoon.iptime.org:22002'
 SITETITLE = AUTHOR
-SITESUBTITLE = 'Machine Learning Researcher'
+# SITESUBTITLE = 'Machine Learning Researcher'
+SITELOGO = SITEURL + '/images/sangwoong_yoon_small.jpg'
 
 PATH = 'content'
 
@@ -47,3 +49,6 @@ MARKUP = ('md', 'ipynb')
 
 PLUGIN_PATHS = ['/home/swyoon/cloned/pelican-plugins']
 PLUGINS = ['pelican-ipynb.markup']
+
+
+GOOGLE_ANALYTICS = 'UA-135002298-1'
