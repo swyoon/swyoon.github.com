@@ -2,31 +2,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="https://swyoon.github.io/theme/stylesheet/style.min.css">
 
   <link rel="stylesheet" type="text/css" href="https://swyoon.github.io/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="https://swyoon.github.io/theme/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://swyoon.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://swyoon.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://swyoon.github.io/theme/font-awesome/css/solid.css">
 
 
     <link href="https://swyoon.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="swyoon's blog Atom">
 
 
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="" />
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-135002298-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 <meta name="author" content="Sangwoong Yoon" />
-<meta name="description" content="Kernel Stein Methods¶ Stein's method Kernelized Stein Discrepancy Stein Gradient Estimator 1. Stein's Method¶ Charles Stein 1972. Originally developed to prove central limit theorem. I.e., to bound the difference between the sum of random variables and the The method is generalized to obtain bounds on the distance between two probability distributions wrt probability metric. 1.1 Preliminary - Statistical Distance¶" />
+<meta name="description" content="Kernel Stein Methods¶ Stein&#39;s method Kernelized Stein Discrepancy Stein Gradient Estimator 1. Stein&#39;s Method¶ Charles Stein 1972. Originally developed to prove central limit theorem. I.e., to bound the difference between the sum of random variables and the The method is generalized to obtain bounds on the distance between two probability distributions wrt probability metric. 1.1 Preliminary - Statistical Distance¶" />
 <meta name="keywords" content="kernel kernel-stein">
+
 <meta property="og:site_name" content="swyoon's blog"/>
-<meta property="og:title" content="Kernel and Stein's Identity"/>
-<meta property="og:description" content="Kernel Stein Methods¶ Stein's method Kernelized Stein Discrepancy Stein Gradient Estimator 1. Stein's Method¶ Charles Stein 1972. Originally developed to prove central limit theorem. I.e., to bound the difference between the sum of random variables and the The method is generalized to obtain bounds on the distance between two probability distributions wrt probability metric. 1.1 Preliminary - Statistical Distance¶"/>
+<meta property="og:title" content="Kernel and Stein&#39;s Identity"/>
+<meta property="og:description" content="Kernel Stein Methods¶ Stein&#39;s method Kernelized Stein Discrepancy Stein Gradient Estimator 1. Stein&#39;s Method¶ Charles Stein 1972. Originally developed to prove central limit theorem. I.e., to bound the difference between the sum of random variables and the The method is generalized to obtain bounds on the distance between two probability distributions wrt probability metric. 1.1 Preliminary - Statistical Distance¶"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="https://swyoon.github.io/ksd.html"/>
 <meta property="og:type" content="article"/>
@@ -35,20 +49,20 @@
 <meta property="article:author" content="https://swyoon.github.io/author/sangwoong-yoon.html">
 <meta property="article:section" content="kernel_methods"/>
 <meta property="article:tag" content="kernel kernel-stein"/>
-<meta property="og:image" content="">
+<meta property="og:image" content="http://swyoon.iptime.org:22002/images/sangwoong_yoon_small.jpg">
 
-  <title>swyoon's blog &ndash; Kernel and Stein's Identity</title>
+  <title>swyoon's blog &ndash; Kernel and Stein&#39;s Identity</title>
 
 </head>
 <body>
   <aside>
     <div>
       <a href="https://swyoon.github.io">
-        <img src="https://swyoon.github.io/theme/img/profile.png" alt="Sangwoong Yoon" title="Sangwoong Yoon">
+        <img src="http://swyoon.iptime.org:22002/images/sangwoong_yoon_small.jpg" alt="Sangwoong Yoon" title="Sangwoong Yoon">
       </a>
       <h1><a href="https://swyoon.github.io">Sangwoong Yoon</a></h1>
 
-<p>Machine Learning Researcher</p>
+
       <nav>
         <ul class="list">
           <li><a href="https://swyoon.github.io/pages/about.html#about">about</a></li>
@@ -60,8 +74,16 @@
       </nav>
 
       <ul class="social">
-        <li><a class="sc-github" href="https://www.github.com/swyoon" target="_blank"><i class="fa fa-github"></i></a></li>
-        <li><a class="sc-facebook" href="https://www.facebook.com/sangwoong.yoon.18" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li>
+            <a  class="sc-github" href="https://www.github.com/swyoon" target="_blank">
+            <i class="fab fa-github">
+            </i>
+          </a></li>
+          <li>
+            <a  class="sc-facebook" href="https://www.facebook.com/sangwoong.yoon.18" target="_blank">
+            <i class="fab fa-facebook">
+            </i>
+          </a></li>
       </ul>
     </div>
 
@@ -72,6 +94,7 @@
 
 <article class="single">
   <header>
+      
     <h1 id="ksd">Kernel and Stein's Identity</h1>
     <p>
           Posted on 화 30 10월 2018 in <a href="https://swyoon.github.io/category/kernel_methods.html">kernel_methods</a>
@@ -1251,14 +1274,14 @@ To obtain a sclaer, the trace is taken. (the dimension of $f$ needs to be the sa
 
 
 
+
 </article>
 
     <footer>
-<p>&copy; Sangwoong Yoon </p>
+<p>&copy;  </p>
 <p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
 </p>    </footer>
   </main>
-
 
 
 
@@ -1269,9 +1292,10 @@ To obtain a sclaer, the trace is taken. (the dimension of $f$ needs to be the sa
   "@type" : "Blog",
   "name": " swyoon's blog ",
   "url" : "https://swyoon.github.io",
-  "image": "",
+  "image": "http://swyoon.iptime.org:22002/images/sangwoong_yoon_small.jpg",
   "description": ""
 }
 </script>
+
 </body>
 </html>
