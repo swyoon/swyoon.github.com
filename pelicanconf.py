@@ -52,3 +52,4 @@ PLUGINS = ['pelican-ipynb.markup']
 
 
 GOOGLE_ANALYTICS = 'UA-135002298-1'
+DISQUS_SITENAME = 'swyoon'
