@@ -7,7 +7,7 @@ SITENAME = "swyoon's blog"
 SITEURL = 'https://swyoon.github.io'
 # SITEURL = 'http://swyoon.iptime.org:22002'
 SITETITLE = AUTHOR
-# SITESUBTITLE = 'Machine Learning Researcher'
+SITESUBTITLE = 'Machine learning researcher'
 SITELOGO = SITEURL + '/images/sangwoong_yoon_small.jpg'
 
 PATH = 'content'
@@ -39,7 +39,8 @@ SOCIAL = (('github', 'https://www.github.com/swyoon'),
 
 DEFAULT_PAGINATION = 10
 
-THEME = "/home/swyoon/pelican-themes/Flex"
+# THEME = "/home/swyoon/pelican-themes/Flex"
+THEME = "Flex"
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -47,7 +48,8 @@ THEME = "/home/swyoon/pelican-themes/Flex"
 # added by swyoon
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATHS = ['/home/swyoon/cloned/pelican-plugins']
+# PLUGIN_PATHS = ['/home/swyoon/cloned/pelican-plugins']
+PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['pelican-ipynb.markup']
 
 
