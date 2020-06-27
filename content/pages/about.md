@@ -1,12 +1,16 @@
 Title: about
 Date: 2018-10-29
+save_as: index.html
 
 Sangwoong Yoon
 ===================
 
-I am a Ph.D. student at [Robotics Laboratory](http://robotics.snu.ac.kr/fcp/) (advisor: Prof. Frank Chongwoo Park) in Seoul National University, and a research scientist intern at Kakao Brain Inc. I am deeply interested in understanding fundamental ideas in machine learning. My research interest includes information theory, nonparametric algorithms, and decision making under uncertainty. I am also closely working with Prof. Yung-Kyun Noh (Hanyang University).
+I am a Ph.D. student at [Robotics Laboratory](http://robotics.snu.ac.kr/fcp/) (advisor: Prof. Frank Chongwoo Park) in Seoul National University.
+In general, I love building machine learning algorithms in a principled manner, e.g. by using information theory or taking a probabilistic approach.
+Currently, my research focuses on out-of-distribution detection based on generative machine learning.
+I am also closely working with Prof. Yung-Kyun Noh (Hanyang University).
 
-My curriculum vitae can be accessed [here]().
+My curriculum vitae can be accessed [here]({filename}/pdfs/cv_swyoon_v20200627.pdf).
 
 
 ## Education  
@@ -26,7 +30,7 @@ My curriculum vitae can be accessed [here]().
 
 ## Work Experience
 
-* **2019 - Present** Research scientist intern at **Kakao Brain**
+* **2019 - 2020** Research scientist intern at **Kakao Brain**
     * Working on Content-based Image Retrieval using Graph Neural Networks
 * **2018 - 2019** Researcher at **SNU Robotics Lab** & **Saige Research Inc.**
     * Developed surface inspection algorithms based on deep learning
