@@ -1,20 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>swyoon's blog</title><link href="https://swyoon.github.io/" rel="alternate"></link><link href="https://swyoon.github.io/feeds/all.atom.xml" rel="self"></link><id>https://swyoon.github.io/</id><updated>2020-01-07T11:15:00+09:00</updated><entry><title>Python Cheatsheet</title><link href="https://swyoon.github.io/python-cheatsheet.html" rel="alternate"></link><published>2020-01-07T11:15:00+09:00</published><updated>2020-01-07T11:15:00+09:00</updated><author><name>Sangwoong Yoon</name></author><id>tag:swyoon.github.io,2020-01-07:/python-cheatsheet.html</id><summary type="html">&lt;p&gt;Python Cheatsheet&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Python Cheatsheet&lt;/h1&gt;
-&lt;p&gt;Useful hacks and tips for Python.&lt;/p&gt;
-&lt;h2&gt;Concatenating lists in a list&lt;/h2&gt;
-&lt;p&gt;See: https://stackoverflow.com/a/716482/2978409&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;itertools&lt;/span&gt;
-&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
-&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;itertools&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chain&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;list&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;itertools&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chain&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;from_iterable&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;l&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
-&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="python"></category></entry><entry><title>Kernel Mean Embedding and Maximum Mean Discrepancy</title><link href="https://swyoon.github.io/kme-and-mmd.html" rel="alternate"></link><published>2019-02-25T00:00:00+09:00</published><updated>2019-02-25T00:00:00+09:00</updated><author><name>Sangwoong Yoon</name></author><id>tag:swyoon.github.io,2019-02-25:/kme-and-mmd.html</id><summary type="html">&lt;p&gt;&lt;intro&gt;
-Kernel mean embedding is &lt;/p&gt;
-&lt;h1&gt;Background&lt;/h1&gt;
-&lt;h1&gt;Embedding of Distributions in RKHS&lt;/h1&gt;
-&lt;h1&gt;Comparing Distributions in RKHS&lt;/h1&gt;</summary><content type="html">&lt;p&gt;&lt;intro&gt;
-Kernel mean embedding is &lt;/p&gt;
-&lt;h1&gt;Background&lt;/h1&gt;
-&lt;h1&gt;Embedding of Distributions in RKHS&lt;/h1&gt;
-&lt;h1&gt;Comparing Distributions in RKHS&lt;/h1&gt;</content></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>swyoon's blog</title><link href="https://swyoon.github.io/" rel="alternate"></link><link href="https://swyoon.github.io/feeds/all.atom.xml" rel="self"></link><id>https://swyoon.github.io/</id><updated>2022-04-20T14:22:42Z</updated></feed>

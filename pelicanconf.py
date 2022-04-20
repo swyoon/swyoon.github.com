@@ -29,13 +29,14 @@ DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = True
 
 # Blogroll
-LINKS = (('Archives', '/archives.html'),)
+# LINKS = (('Archives', '/archives.html'),)
          # ('Categories', '/categories.html'),
         # ('Tags', '/tags.html'))
 
 # Social widget
 SOCIAL = (('github', 'https://www.github.com/swyoon'),
-          ('facebook', 'https://www.facebook.com/sangwoong.yoon.18'))
+          ('facebook', 'https://www.facebook.com/sangwoong.yoon.18'),
+          ('twitter', 'https://twitter.com/WoongSSang'))
 
 DEFAULT_PAGINATION = 10
 
@@ -43,7 +44,7 @@ DEFAULT_PAGINATION = 10
 THEME = "Flex"
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # added by swyoon
 MARKUP = ('md', 'ipynb')
@@ -56,4 +57,8 @@ PLUGINS = ['pelican-ipynb.markup']
 GOOGLE_ANALYTICS = 'UA-135002298-1'
 DISQUS_SITENAME = 'swyoon'
 
-STATIC_PATHS = ['images', 'pdfs']
+STATIC_PATHS = ['images', 'pdfs', 'extra']
+
+EXTRA_PATH_METADATA = {
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+}
