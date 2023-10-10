@@ -3,11 +3,11 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Sangwoong Yoon'
-SITENAME = "swyoon's blog"
+SITENAME = "Sangwoong Yoon"
 SITEURL = 'https://swyoon.github.io'
 # SITEURL = 'http://swyoon.iptime.org:22002'
 SITETITLE = AUTHOR
-SITESUBTITLE = 'Machine learning researcher'
+SITESUBTITLE = 'AI Research Fellow @ KIAS'
 SITELOGO = SITEURL + '/images/sangwoong_yoon_small.jpg'
 
 PATH = 'content'
@@ -36,7 +36,8 @@ DISPLAY_CATEGORIES_ON_MENU = True
 # Social widget
 SOCIAL = (('github', 'https://www.github.com/swyoon'),
           ('facebook', 'https://www.facebook.com/sangwoong.yoon.18'),
-          ('twitter', 'https://twitter.com/WoongSSang'))
+          ('twitter', 'https://twitter.com/WoongSSang'),
+          ('linkedin', 'https://www.linkedin.com/in/sangwong-yoon-8a6944b9/'))
 
 DEFAULT_PAGINATION = 10
 
@@ -47,11 +48,11 @@ THEME = "Flex"
 RELATIVE_URLS = True
 
 # added by swyoon
-MARKUP = ('md', 'ipynb')
+MARKUP = ('md')
 
 # PLUGIN_PATHS = ['/home/swyoon/cloned/pelican-plugins']
 PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['pelican-ipynb.markup']
+PLUGINS = []
 
 
 GOOGLE_ANALYTICS = 'UA-135002298-1'

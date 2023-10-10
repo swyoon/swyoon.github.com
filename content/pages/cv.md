@@ -4,20 +4,17 @@ Date: 2018-10-29
 Sangwoong Yoon
 ===================
 
-I am a Ph.D. student at [Robotics Laboratory](http://robotics.snu.ac.kr/fcp/) (advisor: Prof. Frank Chongwoo Park) in Seoul National University.
-I love building machine learning algorithms in a principled manner, e.g. by using information theory or taking a probabilistic approach.
-Currently, my research focuses on out-of-distribution detection based on generative machine learning.
-I am also closely working with Prof. Yung-Kyun Noh (Hanyang University).
-
-My up-to-date curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangwoong_Yoon_v20220317.pdf) (last update: Mar 17, 2022).
+A PDF version of my curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangwoong_Yoon_v20231010.pdf) (last update: Oct 10, 2023).
 
 
 ## Education  
 
 
 
-* **2020 - Present.** Ph.D. student at Robotics Laboratory, Dept. of Mechanical Engineering, Seoul National University
+* **2020 - 2023.** Ph.D. degree at Robotics Laboratory, Dept. of Mechanical Engineering, Seoul National University
     - Advisor: Prof. Frank Chongwoo Park
+    - Thesis: Energy-Based Probabilistic Models for Epistemic Uncertainty Quantification
+    - Outstanding Doctoral Dissertation Award
 * **2016.** M.S. degree in the Interdisciplinary Program in Neuroscience, Seoul National University   
     - Advisor: Prof. Byung-Tak Zhang, the professor of computer science and engineering  
     - Thesis: Adaptive Bayesian Optimization for Organic Material Screening  
@@ -29,6 +26,10 @@ My up-to-date curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangw
 
 ## Work Experience
 
+* **Sep 2023 - Present** AI Research Fellow at *Korea Institute for Advanced Study (KIAS)*
+* **2022** Applied scientist intern at **Amazon.com**
+    * Research on incorporating uncertainty information into large language models to improve click-through rate prediction. 
+    * Received ``inclined to hire" evaluation.
 * **2019 - 2020** Research scientist intern at **Kakao Brain**
     * Working on Content-based Image Retrieval using Graph Neural Networks
 * **2018 - 2019** Researcher at **SNU Robotics Lab** & **Saige Research Inc.**
@@ -42,11 +43,7 @@ My up-to-date curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangw
 
 ## Publications
 
-1. **Sangwoong Yoon**, Frank C. Park, and Yung-Kyun Noh. **Kullback-Leibler Divergence Estimation using Variationally Weighted Kernel Density Estimators**, Neural Information Processing Systems Workshop on Information Theory and Machine Learning, 2019.
-2. SooKyung Kim, Hyojin Kim, Joonseok Lee, **Sangwoong Yoon**, Samira E. Kahou, Karthik Kashinath, Mr Prabhat. **Deep Hurricane-Tracker: Tracking and Forecasting Extreme Climate Events**, IEEE Winter Conference on Applications of Computer Vision, 2019.
-3. **Sangwoong Yoon**, Yonho Song, Minsoo Kim, Frank C. Park and Yung-Kyun Noh. **Interpretable Feature Selection Using Local Information for Credit Assessment**. Neural Information Processing Systems 2018 Workshop on Challenges and Opportunities for AI in Financial Services, 2018 (Oral).
-4. **Sangwoong Yoon**, Sang-Woo Lee, and Byoung-Tak Zhang, **Predictive Property of Hidden Representations in Recurrent Neural Network Language Models**, Neural Information Processing Workshop Systems 2014 Workshop on Modern Machine Learning Methods and Natural Language Processing, 2014.
-
+Check out my [Google Scholar](https://scholar.google.co.kr/citations?user=cH2rjfIAAAAJ).
 
 ## Patents
 
@@ -56,7 +53,7 @@ My up-to-date curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangw
 
 ## Professional Services
 
-* Served as a reviewer in NeurIPS 2019, NeurIPS 2018, ICML 2019, ICML 2020, AISTATS 2019, AISTATS 2018, ACML 2019, and ACML 2018
+* Served as a reviewer in NeurIPS, ICML, ICLR, AISTATS, AISTATS, ACML
 * Volunteered as a website admin for the second Korea-Japan Machine Learning Workshop
 * Volunteered as a staff in PYCON KR 2015 and PYCON APAC 2017
 
