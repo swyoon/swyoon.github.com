@@ -8,7 +8,7 @@ SITEURL = 'https://swyoon.github.io'
 # SITEURL = 'http://swyoon.iptime.org:22002'
 SITETITLE = AUTHOR
 SITESUBTITLE = 'AI Research Fellow @ KIAS'
-SITELOGO = SITEURL + '/images/sangwoong_yoon_small.jpg'
+SITELOGO = SITEURL + '/images/swyoon_profile_josun_crop.jpg'
 
 PATH = 'content'
 
