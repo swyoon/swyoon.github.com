@@ -4,7 +4,7 @@ Date: 2018-10-29
 Sangwoong Yoon
 ===================
 
-A PDF version of my curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangwoong_Yoon_v20241118.pdf) (last update: Nov 18, 2024).
+A PDF version of my curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangwoong_Yoon_p20241118.pdf) (last update: Nov 18, 2024).
 
 
 ## Education  
