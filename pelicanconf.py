@@ -7,7 +7,7 @@ SITENAME = "Sangwoong Yoon"
 SITEURL = 'https://swyoon.github.io'
 # SITEURL = 'http://swyoon.iptime.org:22002'
 SITETITLE = AUTHOR
-SITESUBTITLE = 'AI Research Fellow @ KIAS'
+SITESUBTITLE = 'Research Fellow @ University College London'
 SITELOGO = SITEURL + '/images/swyoon_profile_josun_crop.jpg'
 
 PATH = 'content'
@@ -37,7 +37,7 @@ DISPLAY_CATEGORIES_ON_MENU = True
 SOCIAL = (('github', 'https://www.github.com/swyoon'),
           ('facebook', 'https://www.facebook.com/sangwoong.yoon.18'),
           ('twitter', 'https://twitter.com/WoongSSang'),
-          ('linkedin', 'https://www.linkedin.com/in/sangwong-yoon-8a6944b9/'))
+          ('linkedin', 'https://www.linkedin.com/in/sangwoong-yoon-8a6944b9/'))
 
 DEFAULT_PAGINATION = 10
 

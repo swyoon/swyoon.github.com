@@ -4,7 +4,7 @@ Date: 2018-10-29
 Sangwoong Yoon
 ===================
 
-A PDF version of my curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangwoong_Yoon_p20241118.pdf) (last update: Nov 18, 2024).
+A PDF version of my curriculum vitae can be accessed [here]({filename}/pdfs/CV___Sangwoong_Yoon_p20250427.pdf) (last update: Apr 27, 2025).
 
 
 ## Education  
@@ -26,7 +26,8 @@ A PDF version of my curriculum vitae can be accessed [here]({filename}/pdfs/CV__
 
 ## Work Experience
 
-* **Sep 2023 - Present** AI Research Fellow at *Korea Institute for Advanced Study (KIAS)*
+* **Jan 2025 - Present** Research Fellow at *University College London*
+* **Sep 2023 - Jan 2025** AI Research Fellow at *Korea Institute for Advanced Study (KIAS)*
 * **2022** Applied scientist intern at **Amazon.com**
     * Research on incorporating uncertainty information into large language models to improve click-through rate prediction. 
     * Received ``inclined to hire" evaluation.
@@ -53,6 +54,7 @@ Check out my [Google Scholar](https://scholar.google.co.kr/citations?user=cH2rjf
 
 ## Professional Services
 
+* Served as an area chair in NeurIPS 2025
 * Served as a reviewer in NeurIPS, ICML, ICLR, AISTATS, AISTATS, ACML
 * Volunteered as a website admin for the second Korea-Japan Machine Learning Workshop
 * Volunteered as a staff in PYCON KR 2015 and PYCON APAC 2017
@@ -60,6 +62,9 @@ Check out my [Google Scholar](https://scholar.google.co.kr/citations?user=cH2rjf
 
 ## Awards
 
-1. Best poster presentation award (gold prize, the first place) at THE AI KOREA 2019
+1. Outstanding Doctoral Dissertation Award (2023)
+2. Qualcomm AI Fellowship Korea (2021)
+3. Youlchon AI Stars Fellowship (2021)
+4. Best poster presentation award (gold prize, the first place) at THE AI KOREA 2019
     * Poster title: Kullback-Leibler Divergence Estimation using Variationally Weighted Kernel Density Estimators
-2. Four-year full tuition scholarship granted by Korea Student Aid Foundation (2008 - 2012).
+5. Four-year full tuition scholarship granted by Korea Student Aid Foundation (2008 - 2012).
